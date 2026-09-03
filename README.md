@@ -1,3 +1,5 @@
+<!-- Canonical source: Holkas/docs/releases-readme.md. Published to BelousovSL/Holkas-Releases. -->
+
 # Holkas
 
 > Public downloads and installation instructions for Holkas.
@@ -19,7 +21,7 @@ Holkas is a migration workspace for customized Parus applications. It helps insp
 | Holkas CLI | Command-line client for Windows x64 | [`holkas-cli-win-x64-<version>.zip`](https://github.com/BelousovSL/Holkas-Releases/releases/latest) |
 | Docker image | Linux server or Docker Desktop | [`belousov2501/holkas`](https://hub.docker.com/r/belousov2501/holkas) |
 
-Windows archives are self-contained; a separate .NET installation is not required.
+Windows archives are self-contained; a separate .NET installation is not required. They are not currently code-signed, so verify the published SHA-256 checksum if Windows displays a SmartScreen warning.
 
 ## Quick start with Docker
 
