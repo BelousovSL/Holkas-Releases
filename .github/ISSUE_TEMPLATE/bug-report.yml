@@ -1,0 +1,95 @@
+name: Сообщить об ошибке
+description: Расскажите о воспроизводимой проблеме в работе Holkas
+title: "[Ошибка] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за сообщение. Чем точнее исходные данные, тем быстрее получится разобраться.
+
+        Заявка и все вложения видны публично. Не указывайте пароли, токены, строки подключения и конфиденциальные данные из баз.
+
+  - type: input
+    id: version
+    attributes:
+      label: Версия Holkas
+      description: Версия указана в интерфейсе и в имени скачанного архива или Docker-тега.
+      placeholder: Например, v0.1.2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: distribution
+    attributes:
+      label: Способ запуска
+      options:
+        - Holkas Web — архив для Windows
+        - Holkas CLI — архив для Windows
+        - Docker-образ
+        - Другое
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Режим Holkas Web
+      description: Если проблема не относится к Holkas Web, выберите последний вариант.
+      options:
+        - Standalone
+        - Local
+        - Team
+        - Не знаю или не относится
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Что произошло
+      description: Опишите фактический результат и текст ошибки.
+      placeholder: Что вы увидели и почему считаете это ошибкой?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как воспроизвести
+      description: Перечислите действия, после которых возникает проблема.
+      placeholder: |
+        1. Открыл ...
+        2. Выбрал ...
+        3. Нажал ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Какого результата вы ожидали
+    validations:
+      required: true
+
+  - type: input
+    id: operation
+    attributes:
+      label: Идентификатор операции
+      description: Укажите его, если ошибка возникла во время переноса, сравнения или другой операции.
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Дополнительные сведения
+      description: Можно приложить снимки экрана или проверенный журнал операции без секретов и конфиденциальных данных.
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Проверка перед публикацией
+      options:
+        - label: Я проверил текст и вложения — в них нет паролей, токенов, строк подключения и конфиденциальных данных.
+          required: true
+
