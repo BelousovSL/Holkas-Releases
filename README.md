@@ -29,6 +29,7 @@ Holkas — независимый инструмент, не модуль кор
 ## Загрузка
 
 - **Windows:** архивы `holkas-web-win-x64-<версия>.zip`, `holkas-cli-win-x64-<версия>.zip` и контрольные суммы `SHA256SUMS` — на странице [последнего релиза](https://github.com/BelousovSL/Holkas-Releases/releases/latest).
+- **Linux:** CLI `holkas-cli-linux-x64-<версия>.tar.gz` для скриптов и конвейеров CI/CD — там же.
 - **Docker:** образ [`belousov2501/holkas`](https://hub.docker.com/r/belousov2501/holkas), теги `<версия>` и `latest`.
 
 ## Вопросы и ошибки
